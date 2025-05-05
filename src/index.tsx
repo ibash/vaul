@@ -2,7 +2,7 @@
 
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import React from 'react';
-import { DrawerContext, useDrawerContext } from './context';
+import { DrawerContextValue, DrawerContext, useDrawerContext } from './context';
 import './style.css';
 import { usePreventScroll, isInput } from './use-prevent-scroll';
 import { useComposedRefs } from './use-composed-refs';
@@ -1144,4 +1144,6 @@ export const Drawer = {
   Close: DialogPrimitive.Close,
   Title: DialogPrimitive.Title,
   Description: DialogPrimitive.Description,
+  DrawerContext,
+  useDrawerContext,
 };

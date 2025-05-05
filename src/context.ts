@@ -1,7 +1,7 @@
 import React from 'react';
 import { DrawerDirection } from './types';
 
-interface DrawerContextValue {
+export interface DrawerContextValue {
   drawerRef: React.RefObject<HTMLDivElement>;
   overlayRef: React.RefObject<HTMLDivElement>;
   onPress: (event: React.PointerEvent<HTMLDivElement>) => void;
